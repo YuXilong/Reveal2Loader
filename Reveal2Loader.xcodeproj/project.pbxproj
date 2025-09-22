@@ -16,7 +16,6 @@
 		C91FD477221B45D20089920A /* Reveal2Loader.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Reveal2Loader.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91FD47A221B45D20089920A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C91FD47F221B45D20089920A /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
-		C91FD480221B45D20089920A /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		C91FD482221B45D20089920A /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		C91FD486221B45D20089920A /* Reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Reveal2Loader.plist; path = Package/Library/PreferenceLoader/Preferences/Reveal2Loader.plist; sourceTree = "<group>"; };
 		C91FD487221B45D20089920A /* reveal-logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reveal-logo@3x.png"; path = "Package/Library/PreferenceLoader/Preferences/reveal-logo@3x.png"; sourceTree = "<group>"; };
@@ -92,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				C91FD47F221B45D20089920A /* control */,
-				C91FD480221B45D20089920A /* control.txt */,
 				C91FD48A221B45D20089920A /* preinst */,
 				C91FD48B221B45D30089920A /* postinst */,
 				C91FD48C221B45D30089920A /* postrm */,
@@ -243,7 +241,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/EasyDev/bin/ed --xcbp\n";
+			shellScript = "/opt/MonkeyDev/bin/md3 --xcbp\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -262,7 +260,9 @@
 		C91FD495221B45D30089920A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -290,6 +290,8 @@
 					"$(inherited)",
 					"$(EasyDevTheosPath)/vendor/lib",
 				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,7 +302,9 @@
 		C91FD496221B45D30089920A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_BITCODE = NO;
@@ -333,6 +337,8 @@
 					"$(inherited)",
 					"$(EasyDevTheosPath)/vendor/lib",
 				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,7 +361,7 @@
 				EasyDevBuildPackageOnAnyBuild = NO;
 				EasyDevClearUiCacheOnInstall = NO;
 				EasyDevCopyOnBuild = NO;
-				EasyDevDeviceIP = "";
+				EasyDevDeviceIP = 10.0.59.92;
 				EasyDevDevicePort = "";
 				EasyDevInstallOnAnyBuild = 0;
 				EasyDevInstallOnProfiling = 0;
@@ -368,9 +374,20 @@
 					"$(EasyDevTheosPath)/vendor/include",
 				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 10.0.59.92;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 22;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevRootless = YES;
+				MonkeyDevkillProcessOnInstall = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				THEOS_PACKAGE_SCHEME = roothide;
 			};
 			name = Release;
 		};
@@ -389,7 +406,7 @@
 				EasyDevBuildPackageOnAnyBuild = NO;
 				EasyDevClearUiCacheOnInstall = NO;
 				EasyDevCopyOnBuild = NO;
-				EasyDevDeviceIP = "";
+				EasyDevDeviceIP = 10.0.59.92;
 				EasyDevDevicePort = "";
 				EasyDevInstallOnAnyBuild = 0;
 				EasyDevInstallOnProfiling = 0;
@@ -402,9 +419,20 @@
 					"$(EasyDevTheosPath)/vendor/include",
 				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 10.0.59.92;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 22;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevRootless = YES;
+				MonkeyDevkillProcessOnInstall = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				THEOS_PACKAGE_SCHEME = roothide;
 			};
 			name = Debug;
 		};

@@ -4,56 +4,99 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/RevealServer-Swift.h</key>
+		<data>
+		y2tyBDuL9hWdcqWFCO6CF36O9DU=
+		</data>
 		<key>Headers/RevealServer.h</key>
 		<data>
 		JavE2LI6bNGfH9W90/bDxwIxVlg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		geGJW0dGPi2gMM7A+UEYIGa88u8=
+		VDEBA6bltKOPFrgRFeiHPhN0Tgc=
+		</data>
+		<key>Modules/RevealServer.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		cgy90ouCgcLSIIFE4KXkeh5le60=
+		</data>
+		<key>Modules/RevealServer.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		PfZF0mF4GfiRzj2qgu6LiewQQlc=
+		</data>
+		<key>Modules/RevealServer.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		/SP5vDHGCqcGpHGSES39479AbVA=
+		</data>
+		<key>Modules/RevealServer.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		PfZF0mF4GfiRzj2qgu6LiewQQlc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		EuDEeG1dcC1sd+hIW2SkUAImUg8=
+		W5Q122LAtjtguX+0GhA/6KdPVb8=
 		</data>
-		<key>Scripts/copy_and_codesign_revealserver.sh</key>
+		<key>Scripts/integrate_revealserver.sh</key>
 		<data>
-		yB2zXTggmRD0rra2Hbpxn2zfCRo=
+		pDjnAHC1xiLNLJDDIIrTACRCcFA=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/RevealServer-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1guPAdmxQn8ISkeWF3jCJKYr7P17b0P8gXcNRRoQJLY=
+			</data>
+		</dict>
 		<key>Headers/RevealServer.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JavE2LI6bNGfH9W90/bDxwIxVlg=
-			</data>
 			<key>hash2</key>
 			<data>
 			weLK/65HyV1EiL9dd4xoAqQhf0/0r/Oy6os2nXCA+Ew=
 			</data>
 		</dict>
-		<key>Modules/module.modulemap</key>
+		<key>Modules/RevealServer.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EuDEeG1dcC1sd+hIW2SkUAImUg8=
-			</data>
 			<key>hash2</key>
 			<data>
-			tstqiJpIPr4iEd3MDHClLuTB/ciSC/zNlke1AjfSVuU=
+			FzQU7I6UY0PwB8BaelCZYuKDRbKIP2azC5toXF18LP8=
 			</data>
 		</dict>
-		<key>Scripts/copy_and_codesign_revealserver.sh</key>
+		<key>Modules/RevealServer.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yB2zXTggmRD0rra2Hbpxn2zfCRo=
-			</data>
 			<key>hash2</key>
 			<data>
-			SL0x5cGSOyS1RcojHFEmFX5IDfon/vO37cFsjSIX7LA=
+			TAPkYvYpckJ/CYeJ8pfhyJYasW4EEm0Mf9T75WclBEs=
+			</data>
+		</dict>
+		<key>Modules/RevealServer.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MNe/kYPRFVluJgLteAVD4e39yPIGgrhZ3ANfs/yZJAk=
+			</data>
+		</dict>
+		<key>Modules/RevealServer.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TAPkYvYpckJ/CYeJ8pfhyJYasW4EEm0Mf9T75WclBEs=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kJjvA00ec825fo6+YCStfKr+SSSv0UcB+3l2hARDl40=
+			</data>
+		</dict>
+		<key>Scripts/integrate_revealserver.sh</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XOjBVOZRN/oNePfbAbXae72e3s7W6HqdKnPKJdHque8=
 			</data>
 		</dict>
 	</dict>
